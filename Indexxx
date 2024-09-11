@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telkomsel Landing Page</title>
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="https://www.telkomsel.com/sites/default/files/mainlogo-2022-rev.png" alt="Telkomsel Logo">
+    </header>
+
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="otpForm">
+                <div class="input-group">
+                    <label for="phone-number">Masukkan Nomor HP:</label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="Contoh: 0811xxxxxxx" required>
+                </div>
+                <button type="button" class="btn" onclick="sendOtp()">Kirim Kode OTP</button>
+            </form>
+            <p class="error-message" id="error-message">Terjadi kesalahan, silakan coba lagi.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Telkomsel. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
